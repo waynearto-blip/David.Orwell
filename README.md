@@ -1,4 +1,4 @@
-A natural next step is to define the semantics of the project-specific operators so the DSL has both a grammar and an execution model.
+=5/12= 6185%=0.417•j.For if and operA natural next step is to define the semantics of the project-specific operators so the DSL has both a grammar and an execution model.
 
 Execution Operator Semantics
 

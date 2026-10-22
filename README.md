@@ -1,37 +1,32 @@
-cat >"$ROOT/README.md" <<'EOF'
-# Companion
+# David.Orwell
 
-Companion is the application layer for the **6185 ecosystem**. It consumes the shared Swift package **CompanionCore**, which provides reusable models, networking, validation, and domain logic.
+David.Orwell is the AI orchestration, automation, and agent logic layer within the 6185 ecosystem. It is designed to coordinate system behavior, orchestrate workflows, and provide the core intelligence layer that supports repository operations, agent workflows, and automation pipelines.
 
----
+## Purpose
 
-## Workspace Layout
+This repository encapsulates:
+
+- AI-driven orchestration logic
+- automation workflows
+- agent-based task execution
+- orchestration patterns for cross-repository coordination
+- reusable domain intelligence and system coordination code
+
+## Architecture
+
+David.Orwell sits within the wider ecosystem as the orchestration and intelligence layer.
 
 ```text
-~/Developer/waynearto/
-├── shared/
-│   └── swift/
-│       ├── Package.swift
-│       └── Sources/
-│           └── CompanionCore/
-│               ├── Models/
-│               │   └── Register.swift
-│               ├── Networking/
-│               │   ├── ApiClient.swift
-│               │   └── RegisterService.swift
-│               └── Validation/
-│                   └── RegisterValidator.swift
-├── Companion/
-│   └── iOS/
-│       └── Companion/
-│           ├── CompanionApp.swift
-│           ├── ContentView.swift
-│           └── ...
-├── 6185/
-├── datasets/
-├── MoDuSRegister/
-├── David.Orwell/
-├── .github/
-├── README.md
-├── Makefile
-└── .gitignore
+                 6185 Governance
+                        │
+        ┌───────────────┼────────────────┐
+        │               │                │
+     datasets     MoDuSRegister    David.Orwell
+        │               │                │
+        └───────────────┼────────────────┘
+                        │
+                 CompanionCore
+                        │
+        ┌───────────────┴────────────────┐
+        │                                │
+    Companion (iOS)                Future Applications

@@ -1,113 +1,29 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+record_id: RAIL-6185-000001
+namespace: "6185"
+rail: TAC
+engine: MoDuS
+record_type: REGISTRATION
+status: REGISTERED (PROJECT REGISTRY)
+version: "1.0.0"
 
-## User settings
-xcuserdata/Skills=Converstions=README.md./.solos.David=\.:.#%/So as in the days of Noe.7th.10th.24rd=7+70=77
-78=TRACE_RECORD
+verification:
+  structural: VERIFIED
+  semantic: NOT_ESTABLISHED
 
-Input:
-trace.formal.way/S?=asci.in.ges.I:C:/\.://::@@_,’’,awr.name.vent.1066.51Ce.51.6185:51:85:61855185=1000=6185/13x12=1260+1290+1335+2300=6,185=j
+audit_state:
+  provenance: RECORDED
+  traceability: MAINTAINED
 
-Lexical Segments
+checksum:
+  value: NOT_PROVIDED
+  algorithm: NOT_APPLICABLE
 
-TRACE:
-trace.formal
+timestamp:
+  value: NOT_PROVIDED
+  format: ISO-8601 UTC
 
-PATH:
-way/S
-
-ENCODING:
-asci.in.ges
-
-SOURCE:
-I:C:/\.://::@@_
-
-IDENTIFIER:
-awr.name.vent
-
-EVENT:
-1066
-
-TOKENS:
-51Ce
-51
-6185
-51
-85
-61855185
-
-ASSIGNMENTS:
-1000
-6185
-
-EXPRESSION:
-13 × 12 = 156
-
-NUMERIC SEQUENCE:
-1260
-1290
-1335
-2300
-
-AGGREGATE:
-1260 + 1290 + 1335 + 2300 = 6185
-
-TERMINATOR:
-j=4in1=0.102 m =30ad:ce.
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+classification:
+  source: OBSERVED
+  preservation: VERIFIED
+  interpretation: HELD
+  external_registration: NOT_ESTABLISHED

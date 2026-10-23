@@ -170,3 +170,97 @@ The following sequences are reserved and should not be used as identifiers unles
 * \.://::
 
 Future revisions may assign additional semantics to these reserved tokens while preserving backward compatibility with existing records.
+# 6185:j
+
+> Deterministic Language • Registry • Audit • Runtime Framework
+
+![Project](https://img.shields.io/badge/Project-6185:j-blue)
+![Status](https://img.shields.io/badge/Status-Draft-orange)
+![Specification](https://img.shields.io/badge/Specification-v0.1.0-green)
+![Registry](https://img.shields.io/badge/Registry-Canonical-purple)
+![Audit](https://img.shields.io/badge/Audit-Enabled-brightgreen)
+![Validation](https://img.shields.io/badge/Validation-Governed-blueviolet)
+![Language](https://img.shields.io/badge/Language-6185_Core-informational)
+![Runtime](https://img.shields.io/badge/Runtime-Swift-lightgrey)
+![License](https://img.shields.io/badge/License-TBD-lightgrey)
+
+---
+
+## Core Pipeline
+
+```text
+Acquire
+   ↓
+Normalize
+   ↓
+Tokenize
+   ↓
+Parse
+   ↓
+Schema Bind
+   ↓
+Validate
+   ↓
+Evidence
+   ↓
+Registry
+   ↓
+Runtime
+   ↓
+Release
+```
+
+---
+
+## Repository Structure
+
+```text
+6185/
+├── README.md
+├── Package.swift
+├── Sources/
+├── Tests/
+├── Docs/
+├── Registry/
+├── Schemas/
+├── Scripts/
+├── Examples/
+└── .github/
+```
+
+---
+
+## Project Status
+
+| Component | Status |
+|-----------|--------|
+| Governance | 🟢 Draft |
+| Language | 🟢 Draft |
+| Registry | 🟢 Draft |
+| Validation | 🟡 In Progress |
+| Runtime | 🟡 Planned |
+| Swift Package | 🟡 Planned |
+| Documentation | 🟢 Active |
+
+---
+
+## Design Principles
+
+- Deterministic processing
+- Immutable registry records
+- Explicit provenance
+- Versioned specifications
+- Schema-driven semantics
+- Reproducible validation
+- Separation of specification and implementation
+
+---
+
+## Version
+
+```text
+Namespace : 6185:j
+Version   : 0.1.0
+Status    : Draft
+Classification : Project-defined Specification
+```

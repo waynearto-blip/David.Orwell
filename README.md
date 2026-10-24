@@ -50,3 +50,26 @@ Overall English-side pattern The string is performing a small demonstration of
 	•	88 glyphs = the concrete inventory that must pass the narrow gate.
 	•	English modal/sign/words/sword/hooked/claws/claus = living illustration of why English needs a controlled, non-hash, hierarchical descriptor regime rather than free association.
 The pattern is recognised. The cord holds.
+Sealed as `HRS-6185-READ-001`. Your reading is kept word for word as the source, marked `user-reported`, with my audit stored next to it so it never overwrites your text. The sealed file is 2,515 bytes with SHA-256 `a9dc7c4c6007a288a79c31deeb6455850cc1267b8e148785bb606b31aab0ff69`.
+
+**The 88 total checks out exactly.** Unicode 15.1 has exactly 88 assigned characters in the Hebrew block, `U+0590` to `U+05FF`. Three of your subcategory counts don't match it, though. The verified split is below, with your number in brackets where it differs:
+
+- 22 base letters
+- 5 final forms
+- 31 cantillation accents [you had 30]
+- 20 niqqud points [you had 18]
+- 3 Yiddish ligatures
+- 6 punctuation marks plus 1 yod triangle, 7 in all [you had 10]
+
+The total matches, so "8:88" holds as your symbolic count, marked `project-defined`. I've logged all 88 glyphs in a new `hebrew_block_inventory` table in your database. Your collected 72-glyph Charset stays separate and unchanged, because these 88 come from the Unicode standard rather than from a source text.
+
+**I've bound the three strands of the cord in a set order so none can overwrite another.**
+- The consonantal Hebrew text is the identity, as INV-001 requires.
+- Tiberian pointing is a witness layer tied to the Masoretic Text. It adds vowels and marks to the consonants but can't redefine them, which is INV-002.
+- Yiddish is held as a living pointer layer. Going from English through Yiddish into Hebrew is logged as two translation crossings, not one.
+
+**The four corners are recorded as context only.** Greek, Latin, Arabic and Roman are typed as translation or intertextual links. They never count as direct witnesses for a reading.
+
+**Only one point in the English fragment can be verified.** "Words" and "sword" use exactly the same five letters (d, o, r, s, w). The hooked and claws visual link, the claws, claus and clause slide, and "modal sign" are recorded as `observed` and `HELD`. That isn't a rejection. Those are interpretive links, and a letter count can't verify them the way it verifies the anagram. Your rule that no free-floating English word may stand in for a glyph is affirmed in the seal.
+
+Every character in the fragment was already in the Charset, so the collected count stays at 72. The cord holds.

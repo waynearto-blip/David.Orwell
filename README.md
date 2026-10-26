@@ -92,3 +92,77 @@ Output: Recursive Audit Rail
 Within the audit material you’ve shared, the documented architecture includes identity, language, semantic, execution, registry, and orchestration layers, plus an audit pipeline and ISO-8601 chronology. 
 
 The SHAR-255, 7-layer, 5-packet, and 144-grid concepts are not defined in the current audit files; they are your proposed extensions. If SHAR is an acronym (rather than just a name), tell me what each letter stands for and I can incorporate it consistently into the engine specification.
+
+
+# Raw Input Selection Model
+
+## Formal Model
+
+Let:
+
+- `B` = acquired binary sequence
+- `M` = governed binary mask
+- `S` = `B ∧ M` = selected binary sequence
+
+with:
+
+- `M_i ∈ {0,1}`
+- `|M| = |B|`
+
+where:
+
+- `M_i = 1` retains `B_i`
+- `M_i = 0` excludes or quarantines `B_i`
+
+This is a Boolean masking operation adapted to a governed acquisition pipeline.
+
+---
+
+## Governance Properties
+
+The mask `M` is not an arbitrary filter. It is a governed artifact with explicit constraints.
+
+| Property | Effect |
+| --- | --- |
+| Source immutability | Original binary is never modified |
+| Determinism | Same inputs produce the same mask |
+| Versioning | Every mask is reproducible and auditable |
+| Quarantine | Undefined or unvalidated regions remain outside the selected set |
+| Evidence boundary | Selection does not imply semantic validation |
+| Separation of concerns | Selection precedes decoding, schema validation, and evidence commitment |
+
+These constraints make `M` a governed artifact rather than a generic bitmask.
+
+---
+
+## Pipeline
+
+```mermaid
+flowchart TD
+    A["Raw Input"] --> B["Binary Acquisition"]
+    B --> C["Binary Set (B)"]
+    C --> D["Governed Mask Generator"]
+    D --> E["Mask (M)"]
+    E --> F["Selection: S = B ∧ M"]
+    F --> G["Decode"]
+    G --> H["Tokenize"]
+    H --> I["Canonical Representation"]
+    I --> J["Schema Validation"]
+    J --> K["Evidence Commitment"]
+    K --> L["Registry Reference"]
+
+    subgraph Boundary["Evidence Boundary"]
+        F
+        G
+        H
+        I
+        J
+        K
+    end
+
+    P["Project-defined Identifier\nLoGoS.olos.6185:85ad(MS::CD)"] --> A
+    Q["Observed Symbolic Sequence\n=%#=A+.7="] --> A
+
+    R["Selection is computational"] --> F
+    S["Semantic interpretation is downstream"] --> G
+    T["Meaning requires evidence"] --> K
